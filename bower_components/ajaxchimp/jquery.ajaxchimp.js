@@ -30,12 +30,12 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
 
     $.ajaxChimp = {
         responses: {
-            'We have sent you a confirmation email'                                             : 0,
-            'Please enter a value'                                                              : 1,
-            'An email address must contain a single @'                                          : 2,
-            'The domain portion of the email address is invalid (the portion after the @: )'    : 3,
-            'The username portion of the email address is invalid (the portion before the @: )' : 4,
-            'This email address looks fake or invalid. Please enter a real email address'       : 5
+            'Te hemos enviado un email de confirmación'                                             : 0,
+            'Por favor entra un valor'                                                              : 1,
+            'La direccion de email debe contener un @'                                          : 2,
+            'La porcion del dominio del email es invailda (la porción despues del @: )'    : 3,
+            'El nombre de usuario del email es invalido (es el nombre antes del @: )' : 4,
+            'Esta direccion de email parece falsa o invalidad. Por favor escriba un email real'       : 5
         },
         translations: {
             'en': null

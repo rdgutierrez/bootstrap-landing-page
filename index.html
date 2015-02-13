@@ -43,7 +43,7 @@
             <p class="lead">Todo cuadro de acné es tratable, inscribirte dejándonos tu correo electrónico y obtén un 20% de descuento en tu primera consulta al momento del lanzamiento de AcnéTx.</p>
 
             <p class="lead">
-            <form method="post" action="YOUR_SUBSCRIBE_URL_HERE">
+            <form method="post" action="http://crossfitlatino.us4.list-manage.com/subscribe/post?u=9a9c8f663568ee8468a010da9&id=116c0179a2">
 			  <input type="text" name="EMAIL" placeholder="Tu email" /><br>
 			  <input type="submit" name="subscribe" value="Suscribete" class="btn btn-lg btn-primary" />        
 			  <p class="result"></p>
@@ -70,5 +70,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bower_components/bootstrap.css/js/bootstrap.min.js"></script>
+    <script src="bower_components/ajaxchimp/jquery.ajaxchimp.js"></script>
+
+    <script>
+    	$(function() {
+		  $('form').ajaxChimp({
+		    callback: function(response) {
+		      $('form .result').text(response.msg);
+		    }
+		  });
+		})
+
+    </script>
 </body>
 </html>
